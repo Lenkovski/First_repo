@@ -1,15 +1,7 @@
 from datetime import datetime
 
 def get_days_from_today(date_str: str) -> int:
-    """
-    Розраховує кількість днів між заданою датою та поточною датою.
-    Параметри:
-    - date_str: рядок у форматі 'РРРР-ММ-ДД'
-    
-    Повертає:
-    - Ціле число: кількість днів від заданої дати до сьогоднішньої.
-      Від'ємне, якщо дата в майбутньому.
-    """
+
     try:
         input_date = datetime.strptime(date_str, "%Y-%m-%d").date()
         current_date = datetime.today().date()
